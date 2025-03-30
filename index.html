@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Update viewport meta tag to force desktop mode -->
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Monish Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Monish <span>Balaji</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="./main.png" alt="Profile Image"> <!-- Update path if needed -->
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Monish</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                    I'm a passionate tech enthusiast with expertise in Web Development, Full Stack Development, and Game Development. My skills extend to cybersecurity, where I specialize in Ethical Hacking and Penetration Testing. I create secure, efficient, and innovative solutions while maintaining the highest standards of web security and user experience. Always eager to take on new challenges and contribute to meaningful projects.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/GINGKA-HAGANE-1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                  
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background & Goals Section -->
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2 class="section-title" data-aos="fade-down">Background & Goals</h2>
+            <div class="background-content">
+                <div class="background-category" data-aos="fade-up">
+                    <h3><i class="fas fa-history"></i> My Background</h3>
+                    <p class="background-text typing-text"></p>
+                </div>
+                <div class="background-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-bullseye"></i> My Goals</h3>
+                    <p class="goals-text typing-text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="sections-container">
+            <!-- Skills Section -->
+            <div class="skills-wrapper">
+                <!-- Remove extra container div and fix structure -->
+                <section id="skills" class="section">
+                    <div class="section-content">
+                        <h2 class="section-title" data-aos="fade-down">My Skills</h2>
+                        <div class="skills-content">
+                            <div class="skill-category" data-aos="fade-up">
+                                <h3>Web Development</h3>
+                                <ul>
+                                    <li>HTML5, CSS3, JavaScript</li>
+                                    <li>React.js, Node.js</li>
+                                    <li>MongoDB, MySQL</li>
+                                    <li>Responsive Design</li>
+                                    <li>API Integration</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                                <h3>Game Development</h3>
+                                <ul>
+                                    <li>Unity Engine</li>
+                                    <li>C# Programming</li>
+                                    <li>Game Design</li>
+                                    <li>2D/3D Development</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                                <h3>Cybersecurity</h3>
+                                <ul>
+                                    <li>Penetration Testing</li>
+                                    <li>Network Security</li>
+                                    <li>Security Auditing</li>
+                                    <li>Vulnerability Assessment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services-wrapper">
+            <section id="services" class="section">
+                <div class="section-content">
+                    <h2 class="section-title" data-aos="fade-down">Services</h2>
+                    <div class="services-content">
+                        <div class="service-category" data-aos="flip-left">
+                            <h3><i class="fas fa-code"></i> Web Development</h3>
+                            <ul>
+                                <li>Full-stack Development</li>
+                                <li>Responsive Design</li>
+                                <li>API Integration</li>
+                                <li>Database Management</li>
+                                <li>Performance Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="service-category" data-aos="flip-left" data-aos-delay="200">
+                            <h3><i class="fas fa-gamepad"></i> Game Development</h3>
+                            <ul>
+                                <li>Unity Game Development</li>
+                                <li>2D/3D Game Design</li>
+                                <li>Game Mechanics</li>
+                                <li>Character Development</li>
+                                <li>Level Design</li>
+                            </ul>
+                        </div>
+                        <div class="service-category" data-aos="flip-left" data-aos-delay="400">
+                            <h3><i class="fas fa-shield-alt"></i> Security Services</h3>
+                            <ul>
+                                <li>Penetration Testing</li>
+                                <li>Security Auditing</li>
+                                <li>Vulnerability Assessment</li>
+                                <li>Security Consulting</li>
+                                <li>Incident Response</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-wrapper">
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <h2 class="section-title" data-aos="fade-down">Contact Me</h2>
+                    <div class="contact-info" data-aos="fade-up">
+                        <h3>Let's Connect!</h3>
+                        <p>I'm always open to discussing new projects and opportunities.</p>
+                        
+                        <div class="contact-links">
+                            <a href="https://github.com/GINGKA-HAGANE-1" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Check out my GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+<!-- Add this before closing body tag -->
+<div class="modal" id="hireModal">
+    <p>Please contact me directly cause my friend you will have my Phone Number so call for any work opportunities!</p>
+    <button onclick="closeModal()">Got it!</button>
+</div>
+</body>
+</html>
